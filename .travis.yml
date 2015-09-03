@@ -1,6 +1,13 @@
 language: ruby
+cache: bundler
 rvm:
-  - 2.2.2
-before_install: gem install bundler -v 1.10.6
+- 1.9.3
+- 2.0.0
+- 2.1.7
+- 2.2.3
+- ruby-head
+git:
+  depth: 1
+before_install: gem install bundler
 script:
 - bundle exec rake
